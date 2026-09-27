@@ -1,0 +1,17 @@
+# Repository submission allowlist. Local reports, screenshots and generated
+# artifacts remain in this working directory but are not committed.
+/*
+!/.gitignore
+!/average.sy
+!/average_base.ll
+!/average_mem2reg.ll
+!/runtime_decls.h
+!/run.sh
+!/tests/
+/tests/*
+!/tests/*.in
+!/tests/*.expected
+!/lib/
+/lib/*
+!/lib/sylib.c
+!/lib/sylib.h

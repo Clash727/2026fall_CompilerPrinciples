@@ -1,0 +1,7 @@
+# Repository submission allowlist. The CANN installer, extracted tools,
+# third-party reference source, reports and generated IR remain local.
+/*
+!/.gitignore
+!/add.mlir
+!/extract-stages.awk
+!/run.sh
