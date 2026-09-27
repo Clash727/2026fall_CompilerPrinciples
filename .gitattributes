@@ -1,3 +1,0 @@
-# Keep shell scripts and byte-compared test fixtures usable on Windows clones.
-Lab1/LLVM/** text eol=lf
-Lab1/MILR/** text eol=lf
