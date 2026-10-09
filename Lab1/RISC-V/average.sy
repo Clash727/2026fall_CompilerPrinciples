@@ -1,0 +1,39 @@
+/* average.sy —— 平均数判断 SysY 源程序（第 7 部分「RISC-V 语言编写」的语义参考） */
+int threshold = 3;
+
+float average(int a[], int n) {
+    int i;
+    int sum = 0;
+
+    i = 0;
+    while (i < n) {
+        sum = sum + a[i];
+        i = i + 1;
+    }
+    return 1.0 * sum / n;
+}
+
+int main() {
+    int a[5];
+    int i;
+    float avg;
+
+    i = 0;
+    while (i < 5) {
+        a[i] = getint();
+        i = i + 1;
+    }
+
+    avg = average(a, 5);
+    putfloat(avg);
+    putch(10);
+
+    if (avg >= threshold) {
+        putint(1);
+    } else {
+        putint(0);
+    }
+    putch(10);
+
+    return 0;
+}
